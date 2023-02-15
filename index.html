@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="stylesheets/main.scss" rel="stylesheet">
+  <title>Tip calculator</title>
+</head>
+<body class="body">
+
+<h1 class="main-title">SPLI<br>TTER</h1>
+
+<section class="main-container">
+  
+  <div class="parameters-container">
+    <label class="label" for="sum">
+      Bill
+      <input id="sum" type="text" class="input">
+      <div class="total"></div>
+    </label>
+    <p class="discount-container-label">
+      Select Tip %
+    </p>
+    <ul class="discount-container">
+      <li class="discount-list-item">
+        <button class="button discount">5%</button>
+      </li>
+      <li class="list">
+        <button class="button discount">10%</button>
+      </li>
+      <li class="list">
+        <button class="button discount">15%</button>
+      </li>
+      <li class="list">
+        <button class="button discount">25%</button>
+      </li>
+      <li class="list">
+        <button class="button discount">50%</button>
+      </li>
+      <li class="list">
+        <button class="button custom">Custom</button>
+      </li>
+    </ul>
+    <label class="label" for="persons">
+      Number of people
+      <input id="persons" type="text" class="input">
+      <div class="persons"></div>
+    </label>
+  </div>
+  
+  <div class="results-container">
+    <ul class="list">
+      <li class="result">
+        <div class="title-container">
+          <p class="title">Tip amount</p>
+          <span class="span">/ person</span>
+        </div>
+        <p class="sum" id="tip">$4.27</p>
+      </li>
+      <li class="result">
+        <div class="title-container">
+          <p class="title">Total</p>
+          <span class="span">/ person</span>
+        </div>
+        <p class="sum" id="tip-sum">$32.79</p>
+      </li>
+    </ul>
+    <button class="button reset">RESET</button>
+  </div>
+  
+</section>
+
+
+</body>
+</html>
